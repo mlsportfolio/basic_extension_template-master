@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Anjan Espn Hack",
+  "version": "0.91",
+  "description": "This extension adds features to your current adblock software",
+  // "icons": {
+  //   "48": "icon48.png",
+  //   "128": "icon128.png"
+  // },
+
+  "content_scripts":[
+    {
+      "matches": ["<all_urls>"],
+      "js":["myscript.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
